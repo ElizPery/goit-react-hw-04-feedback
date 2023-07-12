@@ -9,7 +9,7 @@ export function App() {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
 
-  const feedbackType = ['good', 'neutral', 'bad'];
+  const feedbackType = Object.keys({ good, neutral, bad });
 
   const total = good + neutral + bad;
 
